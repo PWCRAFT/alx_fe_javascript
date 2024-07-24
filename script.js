@@ -1,4 +1,4 @@
-// Quotes array with initial quotes
+// Array to hold the quotes
 let quotes = [
   { text: "The best way to get started is to quit talking and begin doing.", category: "Motivation" },
   { text: "Don't let yesterday take up too much of today.", category: "Inspiration" },
@@ -17,7 +17,7 @@ function showRandomQuote() {
 function addQuote() {
   const newQuoteText = document.getElementById('newQuoteText').value;
   const newQuoteCategory = document.getElementById('newQuoteCategory').value;
-  
+
   if (newQuoteText && newQuoteCategory) {
     quotes.push({ text: newQuoteText, category: newQuoteCategory });
     document.getElementById('newQuoteText').value = '';
@@ -33,4 +33,3 @@ document.getElementById('newQuote').addEventListener('click', showRandomQuote);
 
 // Initial quote display
 showRandomQuote();
-
